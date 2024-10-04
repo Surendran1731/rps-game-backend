@@ -3,18 +3,18 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv')
 
-// Create an Express app
+// create an express app
 const app = express();
 
 
 //dot env config
 dotenv.config()
 
-// Middleware
-app.use(cors());
-app.use(express.json()); // for parsing application/json
 
-// MongoDB Connection
+app.use(cors());
+app.use(express.json());  
+
+// db Connection
 mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -26,13 +26,13 @@ db.once('open', () => {
   console.log('MongoDB connected');
 });
 
-// Import the game routes
+// import the game routes
 const gameRoutes = require('./routes/gameRoutes');
 
-// Use the routes
+// use the routes
 app.use('/api', gameRoutes);
 
-// Start the server
+// start the server
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

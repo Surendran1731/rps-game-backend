@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Game = require('../models/Game');
 
-// Save a new game
+// save a new game
 router.post('/save-game', async (req, res) => {
   const { player1Name, player2Name, rounds, player1Score, player2Score, winner } = req.body;
 
@@ -23,7 +23,7 @@ router.post('/save-game', async (req, res) => {
   }
 });
 
-// Get all game history
+// get all game history
 router.get('/games', async (req, res) => {
   try {
     const games = await Game.find();
