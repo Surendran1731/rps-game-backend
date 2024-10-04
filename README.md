@@ -10,6 +10,6 @@ This is a 2-player stone, paper, scissors game created with React for the fronte
 - Display game history
 
 ## Technology
-- **Frontend:** React, Vite
+- **Frontend:** React
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
