@@ -13,3 +13,6 @@ This is a 2-player stone, paper, scissors game created with React for the fronte
 - **Frontend:** React
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
+
+##Postmen
+--rps-game-backend\public\postman1.png
