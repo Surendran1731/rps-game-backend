@@ -13,6 +13,4 @@ This is a 2-player stone, paper, scissors game created with React for the fronte
 - **Frontend:** React
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
-
-##Postmen
--- If your images are in an `public` folder in the root, you would use `![Game Interface](public/postmen.png)`.
+ 
